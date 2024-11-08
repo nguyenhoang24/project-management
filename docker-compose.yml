@@ -1,0 +1,27 @@
+version: '3'
+services:
+  db:
+    image: mysql:8.0
+    cap_add:
+      - ALL
+    restart: always
+    environment:
+      - MYSQL_DATABASE=thesis_management
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_ROOT_HOST=localhost
+    ports:
+      - '3306:3306'
+    volumes:
+      - db:/var/lib/mysql
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+  cache:
+    image: redis:latest
+    restart: always
+    ports:
+      - '6379:6379'
+    command: redis-server --save 20 1 --loglevel warning --requirepass mgt
+
+volumes:
+  db:
+    driver: local
+
