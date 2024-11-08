@@ -58,12 +58,12 @@ jwt:
   secret: elearninguserservicenjvnvnsjvdvnsvnsvsjvnsvjdvn5AldNYDhCaiCmGiLDDmsmsmfvndvnsdvnsdvnsvnsdvnksvnksdvndjsvnsdkvnskvsjkvsvjkvbkjsdvskvsvbdvdvn
 
 # Amazon S3 Configuration
-amazonProperties:
-  endpointUrl: https://s3.ap-southeast-1.amazonaws.com
-  accessKey: AKIA4IQR3FNC2Q4P656T
-  secretKey: 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
-  bucketName: thesisbucket
-  region: ap-southeast-1
+#amazonProperties:
+#  endpointUrl: https://s3.ap-southeast-1.amazonaws.com
+#  accessKey: AKIA4IQR3FNC2Q4P656T
+#  secretKey: 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
+#  bucketName: thesisbucket
+#  region: ap-southeast-1
 
 # CORS Configuration
 web:
